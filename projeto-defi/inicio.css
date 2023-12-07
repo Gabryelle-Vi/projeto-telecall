@@ -1,0 +1,576 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#blue{
+    width: 100vw;
+    height: 3vh;
+    background-color: #08558b; 
+}
+
+.button{
+    display: flex;
+    position: relative;
+    margin-left: 94%;
+    width: 70px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #39a2db59;
+    cursor: pointer;
+    background-color: black;
+}
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ca1c2a;
+    transition: left 1s;
+}
+.ball-move{
+    left: calc(100% - 40px);
+}
+.dark{
+    background-color: #000000;
+}
+
+.dark > .button{
+    background-color: white;
+}
+
+#header{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 10vh;
+    background-color: #ca1c2a;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.box {
+    display: flex;
+    align-items: center;
+}
+
+ul{
+   
+    color: white;
+    list-style: none;
+    margin: 0;
+}
+
+.botao {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; 
+}
+
+.botao:hover {
+    
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#uls{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+#logo-img{
+    max-width: 100%;
+    width: 170px;
+}
+#ul1{
+    display: flex;
+    margin-top: -20px;
+}
+
+#ul2{    
+    display: flex;  
+    margin-top: -20px;
+    align-items: center;  
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#menu {
+    display: flex;
+    gap: 20px; /*mudei esse a margin*/
+    margin: 0;
+    outline: none;
+
+}
+  
+#menu a {
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+
+   
+
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#icon{
+    display: flex;
+    align-items: center;
+    color: white;  
+    font-size: 17px; 
+    margin-left: -100px;
+}
+#entre{
+    display: flex;
+}
+#entrar, #cadastrar{
+    color: white;
+    font-size: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+   /* background-color: #FFDADA; */
+    transition: background-color 0.3s ease;
+    
+
+   
+}
+
+#entrar {
+    margin-right: 50px; /* Adicionado espaçamento entre os botões */
+   
+}
+
+#cadastrar {
+    background-color: #4CAF50; /* Cor de fundo do botão Cadastro */
+}
+
+
+
+#entrar:hover {
+    background-color: #754747; 
+    cursor: pointer;
+}
+
+#btn-mobile {
+    display: none;
+    color: white;
+}
+.icon-busca{
+    display: block;
+}
+#input{
+    display: flex;
+}
+input{
+    width: 200px;
+
+}
+#pesquisa{
+    padding: 7px;   
+    border-radius: 15px 0px 0px 15px;
+    outline: none;
+    border: 1px solid white; 
+}
+
+#butt-pesquisa{
+    display: flex;  
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid #08558b ;
+    background-color: #08558b;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+.icon-busca{
+    color: white;
+}   
+
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#img-div{
+    max-width: 90%;
+   
+    display: flex;
+    justify-content: center;
+    
+}
+
+main{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.produtos{
+    display: flex; 
+}
+.produtos2{
+    display: flex;
+}
+.vermelho{
+    width: 270px;
+    height: 60px;
+    background-color: #ca1c2a;
+    margin-top: 10px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.branco{
+    width: 270px;
+    height: 300px;
+    background-color: #eeecec;
+    border-radius: 0px 0px 15px 15px;
+}
+#privacidade{
+    margin-left: 40px;
+}
+#facilidade{
+    margin-left: 40px;
+}
+
+.branco > p {
+    text-align: center;
+    color: black;
+    width: 80%;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#fa{
+    width: 200px;
+}
+#calls{
+    width: 185px;
+}
+#fa-div{
+    display: flex;
+    justify-content: center;
+
+}
+
+.qu-div{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+
+}
+
+#n{
+    width: 150px;
+}
+#n-div{
+    display: flex;
+    justify-content: center;
+}
+#verified{
+    width: 250px;
+    display: flex;
+    margin-top: 43px;
+    justify-content: center;
+}
+
+h4{
+    color: white;  
+}
+
+.vermelho:hover{
+    background-color: #66060e;
+}
+.branco > p:hover{
+    font-size: 15px;
+    font-weight: bold;
+}
+#faci{
+    width: 250px;
+    margin-top: 15px;
+}
+#busca{
+    display:flex ;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+.icon-busca{
+    color: white;
+}
+
+.login{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#mapa{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 90%;
+}
+footer{
+    display: flex;
+}
+.footer-left{
+    width: 20vw;
+    height: 40vh;
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    margin-top: 50px;
+    border-right: 2px solid white;
+}
+.footer-inicio{
+    width: 80vw;
+    height: 40vh;
+    float: right;
+    background-color: rgb(29, 27, 27);
+    margin-top: 50px; 
+    display: flex;   
+    justify-content: space-between;  
+}
+#footer-r{
+    display: none;
+}
+h2{
+    color: #2e8acc;
+}
+p{
+    color: white;
+}
+#internet > p {
+    margin-top:20px ;
+}
+#telefonia > p {
+    margin-top:20px ;
+}#rede > p {
+    margin-top:20px ;
+}
+#footer-logo{
+    max-width: 100%;
+}
+#internet{
+    align-items: center ;
+    gap: 40px;  
+    margin-left: 20px; 
+    margin-top: 30px;
+    
+}
+#telefonia{
+    margin-top: 30px;
+    align-items: center ;
+    gap: 40px;
+    
+}
+#rede{  
+    align-items: center ;
+    gap: 40px; 
+    margin-right: 20px;
+    margin-top: 30px;
+  
+}
+#logo-footer{
+    display: none;
+}
+@media only screen and (max-width:1000px){
+    #pesquisa{
+        display: none; 
+    }
+    #butt-pesquisa{
+        display: none;
+    }
+    .produtos{
+        display: block; 
+    }
+    .produtos2{
+        display: block;
+    }
+    #privacidade{
+        margin-left: 0px;
+    }
+    #facilidade{
+        margin-left: 0px;
+    }
+    .nav-red{
+        font-size: 0;
+    }
+    #faq{
+        display: none;
+    }
+    .button{
+      
+        display: none;
+       
+     }
+     .ball{
+        
+         display: none;
+       
+     }
+    
+}
+
+@media (max-width: 600px) {
+
+    #entre{
+        display: none;
+    }
+
+    #ul2{
+        display: none;
+        
+    }
+    #menu {
+      padding-top:20px ;
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #ca1c2a;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid white;
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top:2px solid;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .active {
+        display: block;
+    }
+
+    /* Inicialmente, esconda a classe .menu-mobile */
+    .menu-mobile {
+        display: none;
+        list-style: none; /* Remova a linha abaixo dos itens da lista */
+        padding: 0; /* Remova o preenchimento padrão da lista */
+    }
+
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+   #ul1{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+   }
+   #logo-img{
+    width: 100px;
+   }
+   #internet{
+    display: none;
+   }
+   #rede{
+    display: none;
+   }
+   #telefonia{
+    display: none;
+   }
+   #footer-logo{
+    display: none;
+   }
+   #logo-footer{
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center; 
+    }
+    #footer-r{
+        display: flex;
+        font-size: 13px;
+        align-items: center;
+    }
+    #res > li{
+        margin-top: 5px;
+    }
+    .button{
+      
+       display: none;
+      
+    }
+    .ball{
+       
+        display: none;
+      
+    }
+}
