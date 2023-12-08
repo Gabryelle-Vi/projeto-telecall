@@ -145,7 +145,7 @@ $p = new Pessoa("crudpdo", "127.0.0.1", "root", "" );
         $mae = addslashes($_POST['mae']);
         $endereco = addslashes($_POST['endereco']);
         $complemento = addslashes($_POST['complemento']);
-        $is_master = isset($_POST['is_master']) ? 1 : 0; // Defina a variável $is_master
+        $is_master = isset($_POST['is_master']) ? 1 : 0; // Define se a variável $is_master
 
          // Verificando se todos os campos estão preenchidos
         if (!empty($nome) && !empty($login) && !empty($senha) && !empty($email) && !empty($telefone) && !empty($sexo) && !empty($nascimento) && !empty($cpf) && !empty($mae) && !empty($endereco) && !empty($complemento)){
