@@ -31,7 +31,7 @@ $p = new Pessoa("crudpdo", "127.0.0.1", "root", "" );
             background-color: rgb(0, 0, 0, 0.5);
             padding: 70px;
             border-radius: 15px;
-            width: 20%; /* Ajuste a largura conforme necessário */
+            width: 20%; 
             
            
         }
